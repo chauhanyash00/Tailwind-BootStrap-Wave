@@ -643,6 +643,10 @@ video {
   justify-content: center;
 }
 
+.tw-rounded {
+  border-radius: 0.25rem;
+}
+
 .tw-rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -653,6 +657,10 @@ video {
 
 .tw-border-2 {
   border-width: 2px;
+}
+
+.tw-border-solid {
+  border-style: solid;
 }
 
 .tw-border-blue-600 {
@@ -679,6 +687,10 @@ video {
      object-position: center;
 }
 
+.tw-p-5 {
+  padding: 1.25rem;
+}
+
 .tw-px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -699,6 +711,15 @@ video {
   padding-bottom: 6rem;
 }
 
+.tw-py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.tw-pt-32 {
+  padding-top: 8rem;
+}
+
 .tw-pt-8 {
   padding-top: 2rem;
 }
@@ -707,19 +728,9 @@ video {
   text-align: center;
 }
 
-.tw-text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .tw-text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.tw-text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .tw-text-7xl {
@@ -730,21 +741,6 @@ video {
 .tw-text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.tw-text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.tw-text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
-
-.tw-text-9xl {
-  font-size: 8rem;
-  line-height: 1;
 }
 
 .tw-font-bold {
@@ -791,6 +787,10 @@ video {
 
 .tw-duration-200 {
   transition-duration: 200ms;
+}
+
+.tw-duration-300 {
+  transition-duration: 300ms;
 }
 
 .mb-lg-0{
@@ -850,6 +850,43 @@ svg{
   background-image: linear-gradient(120deg, #b8e1ff, #b8e1ff) !important;
 }
 
+.section2{
+  background: url("https://bootstrapbrain.com/demo/templates/wave/wave-lite/assets/img/cta/cta-img-1.jpg") rgb(0, 0, 0);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  background-attachment: fixed;
+}
+
+.bg-text2{
+  background: linear-gradient(120deg, #e4a0a1, #e4a0a1);
+  background-position: 0 80%;
+  background-repeat: no-repeat;
+  background-size: 100% 20%;
+}
+
+.bsb-overly{
+  opacity: 0.9;
+  background: black;
+  position: relative;
+}
+
+.join-us{
+  background-color: #a30000;
+  color: white;
+}
+
+.hover\:tw-border-solid:hover {
+  border-style: solid;
+}
+
+.hover\:tw-border-red-800:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(153 27 27 / var(--tw-border-opacity));
+}
+
 .hover\:tw-bg-blue-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
@@ -860,6 +897,16 @@ svg{
   background-color: rgb(23 37 84 / var(--tw-bg-opacity));
 }
 
+.hover\:tw-bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:tw-text-red-800:hover {
+  --tw-text-opacity: 1;
+  color: rgb(153 27 27 / var(--tw-text-opacity));
+}
+
 .hover\:tw-text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -868,87 +915,6 @@ svg{
 .focus\:tw-outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-@media not all and (min-width: 1024px) {
-  .max-lg\:tw-text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .max-lg\:tw-text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .max-lg\:tw-text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .max-lg\:tw-text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .max-lg\:tw-text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-}
-
-@media not all and (min-width: 640px) {
-  .max-sm\:tw-text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .max-sm\:tw-text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .max-sm\:tw-text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-}
-
-@media (min-width: 640px) {
-  .sm\:tw-text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .sm\:tw-text-8xl {
-    font-size: 6rem;
-    line-height: 1;
-  }
-
-  .sm\:tw-text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .sm\:tw-text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .sm\:tw-text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .sm\:tw-text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .sm\:tw-text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -1001,11 +967,6 @@ svg{
 
   .lg\:tw-pr-24 {
     padding-right: 6rem;
-  }
-
-  .lg\:tw-text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 
